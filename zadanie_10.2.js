@@ -1,6 +1,8 @@
 // задание 10.2
 
-amount = prompt('Please enter your amount: ');
-dollarRate = 71.31;
-yourAmount = amount * dollarRate;
+let amount = prompt('Please enter your amount: ');
+const dollarRate = 71.31;
+let yourAmount = amount * dollarRate;
 alert('Your amount equals: ' + yourAmount + ' rubRate');
+
+// Код выполняет задачу верно, но есть важное замечание: для объявления переменных в 99% случаев нужно использовать ключевые слова var, let или const. Если объявить переменную без ключевого слова, она становится глобальной, что не очень хорошо, т.к. таким образом вы можете переопределить важные системные свойства. Выше добавила ключевые слова.
